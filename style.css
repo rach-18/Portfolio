@@ -26,9 +26,34 @@ header {
     100% { right: 0; }
 }
 
-.pink-flower {
+/* .pink-flower {
     opacity: 0;
-    animation: bloom 1s ease-in-out forwards;
+    animation: bloom 2s ease-in-out forwards, inAndOut 2s 2s ease-in-out infinite alternate;
+} */
+
+.pink-flower1 { 
+    opacity: 0;
+    animation: bloom 2s ease-in-out forwards, inAndOut 2s 2s ease-in-out infinite alternate;
+}
+
+.pink-flower2 { 
+    opacity: 0;
+    animation: bloom 2s 500ms ease-in-out forwards, inAndOut 2s 2500ms ease-in-out infinite alternate;
+}
+
+.pink-flower3 { 
+    opacity: 0;
+    animation: bloom 2s 1s ease-in-out forwards, inAndOut 2s 3s ease-in-out infinite alternate;
+}
+
+.pink-flower4 { 
+    opacity: 0;
+    animation: bloom 2s 1500ms ease-in-out forwards, inAndOut 2s 3500ms ease-in-out infinite alternate;
+}
+
+.pink-flower5 { 
+    opacity: 0;
+    animation: bloom 2s 2s ease-in-out forwards, inAndOut 2s 4s ease-in-out infinite alternate;
 }
 
 @keyframes bloom {
@@ -46,8 +71,22 @@ header {
     }
 }
 
-.pink-flower:nth-child(1) { animation-delay: 0s; }
-.pink-flower:nth-child(2) { animation-delay: 500ms; }
-.pink-flower:nth-child(3) { animation-delay: 1s; }
-.pink-flower:nth-child(4) { animation-delay: 1500ms; }
-.pink-flower:nth-child(5) { animation-delay: 2s; }
+/* .pink-flower:nth-child(2) { animation-delay: 500ms; } */
+/* .pink-flower:nth-child(3) { animation-delay: 1s; } */
+/* .pink-flower:nth-child(4) { animation-delay: 1500ms; } */
+/* .pink-flower:nth-child(5) { animation-delay: 2s; } */
+
+/* .pink {
+    animation: inAndOut 2s ease-in-out infinite alternate;
+    animation-delay: 2s;
+} */
+
+@keyframes inAndOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
