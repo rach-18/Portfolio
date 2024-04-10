@@ -7,3 +7,47 @@
 header {
     background-image: url(Images/hero-background.jpg);
 }
+
+.name-title {
+    font-family: "Whisper", cursive;
+}
+
+.avatar {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.branch {
+    right: -100%; 
+    animation: slideIn 2s ease forwards;
+}
+
+@keyframes slideIn {
+    0% { right: -100%; }
+    100% { right: 0; }
+}
+
+.pink-flower {
+    opacity: 0;
+    animation: bloom 2s ease-in-out forwards;
+}
+
+@keyframes bloom {
+    0% { 
+        transform: scale(0);
+        opacity: 0; 
+    }
+    80% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1);
+        opacity: 1; 
+    }
+}
+
+.pink-flower:nth-child(1) { animation-delay: 0s; }
+.pink-flower:nth-child(2) { animation-delay: 1s; }
+.pink-flower:nth-child(3) { animation-delay: 2s; }
+.pink-flower:nth-child(4) { animation-delay: 3s; }
+.pink-flower:nth-child(5) { animation-delay: 4s; }
