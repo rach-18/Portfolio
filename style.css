@@ -18,7 +18,7 @@ header {
 
 .branch {
     right: -100%; 
-    animation: slideIn 3s ease forwards;
+    animation: slideIn 2s ease forwards;
 }
 
 @keyframes slideIn {
@@ -47,7 +47,7 @@ header {
 }
 
 .pink-flower:nth-child(1) { animation-delay: 0s; }
-.pink-flower:nth-child(2) { animation-delay: 2s; }
-.pink-flower:nth-child(3) { animation-delay: 1500ms; }
-.pink-flower:nth-child(4) { animation-delay: 1s; }
-.pink-flower:nth-child(5) { animation-delay: 500ms; }
+.pink-flower:nth-child(2) { animation-delay: 500ms; }
+.pink-flower:nth-child(3) { animation-delay: 1s; }
+.pink-flower:nth-child(4) { animation-delay: 1500ms; }
+.pink-flower:nth-child(5) { animation-delay: 2s; }
