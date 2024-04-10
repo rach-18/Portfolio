@@ -17,43 +17,60 @@ header {
 }
 
 .branch {
-    right: -100%; 
-    animation: slideIn 2s ease forwards;
+    animation: slideIn 3s linear forwards;
+    opacity: 0;
 }
 
 @keyframes slideIn {
-    0% { right: -100%; }
-    100% { right: 0; }
+    0% {
+        clip-path: inset(0 0 0 100%);
+        opacity: 1;
+    }
+    20% {
+        clip-path: inset(0 0 0 80%);
+        opacity: 1;
+    }
+    40% {
+        clip-path: inset(0 0 0 60%);
+        opacity: 1;
+    }
+    60% {
+        clip-path: inset(0 0 0 40%);
+        opacity: 1;
+    }
+    80% {
+        clip-path: inset(0 0 0 20%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
 }
-
-/* .pink-flower {
-    opacity: 0;
-    animation: bloom 2s ease-in-out forwards, inAndOut 2s 2s ease-in-out infinite alternate;
-} */
 
 .pink-flower1 { 
     opacity: 0;
-    animation: bloom 2s ease-in-out forwards, inAndOut 2s 2s ease-in-out infinite alternate;
+    animation: bloom 2s ease-in-out forwards, inAndOut 1500ms 2s ease-in-out infinite alternate;
 }
 
 .pink-flower2 { 
     opacity: 0;
-    animation: bloom 2s 500ms ease-in-out forwards, inAndOut 2s 2500ms ease-in-out infinite alternate;
+    animation: bloom 2s 500ms ease-in-out forwards, inAndOut 1500ms 2500ms ease-in-out infinite alternate;
 }
 
 .pink-flower3 { 
     opacity: 0;
-    animation: bloom 2s 1s ease-in-out forwards, inAndOut 2s 3s ease-in-out infinite alternate;
+    animation: bloom 2s 1s ease-in-out forwards, inAndOut 1500ms 3s ease-in-out infinite alternate;
 }
 
 .pink-flower4 { 
     opacity: 0;
-    animation: bloom 2s 1500ms ease-in-out forwards, inAndOut 2s 3500ms ease-in-out infinite alternate;
+    animation: bloom 2s 1500ms ease-in-out forwards, inAndOut 1500ms 3500ms ease-in-out infinite alternate;
 }
 
 .pink-flower5 { 
     opacity: 0;
-    animation: bloom 2s 2s ease-in-out forwards, inAndOut 2s 4s ease-in-out infinite alternate;
+    animation: bloom 2s 2s ease-in-out forwards, inAndOut 1500ms 4s ease-in-out infinite alternate;
 }
 
 @keyframes bloom {
@@ -70,16 +87,6 @@ header {
         opacity: 1; 
     }
 }
-
-/* .pink-flower:nth-child(2) { animation-delay: 500ms; } */
-/* .pink-flower:nth-child(3) { animation-delay: 1s; } */
-/* .pink-flower:nth-child(4) { animation-delay: 1500ms; } */
-/* .pink-flower:nth-child(5) { animation-delay: 2s; } */
-
-/* .pink {
-    animation: inAndOut 2s ease-in-out infinite alternate;
-    animation-delay: 2s;
-} */
 
 @keyframes inAndOut {
     0% {
