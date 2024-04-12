@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="h-screen w-screen overflow-x-hidden">
+<body class="overflow-x-hidden">
+    <header class="h-screen w-screen">
         <nav class="flex justify-between pt-5 pb-3 px-10 bg-[#E6E6E6] shadow-md">
             <p class="name-title text-3xl text-[#006837]">Rachita Pradhan</p>
             <ul class="flex gap-7">
@@ -23,7 +23,7 @@
         </nav>
         <div class="flex justify-center h-[80%]">
             <div class="flex my-auto">
-                <div class="w-[60%] bg-[#A8C090] rounded-r-full flex gap-7 items-center py-7 pl-20">
+                <div class="w-[59%] bg-[#A8C090] rounded-r-full flex gap-7 items-center py-7 pl-20">
                     <div>
                         <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel alias nihil molestias quasi! Sapiente maxime magnam voluptatum eveniet iste repellat natus voluptates pariatur molestiae sint ipsam quas, dolores rerum!</p>
                     </div>
@@ -43,6 +43,13 @@
             </div>
         </div>
     </header>
+    <div id="projects">
+        <div class="relative flex">
+            <img class="absolute z-[-2] left-1 top-[-1.8rem]" src="Images/rope.png" alt="">
+            <img class="absolute z-[-2] left-[7.5rem] top-[-1.8rem] scale-x-[-1]" src="Images/rope.png" alt="">
+            <p class="bg-[#F0C0A9] text-white inline px-8 py-2 text-xl rounded-full absolute top-[3rem] z-[-3]">PROJECTS</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

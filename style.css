@@ -97,3 +97,8 @@ header {
         transform: scale(1.05);
     }
 }
+
+.sign {
+    position: absolute;
+    top: 20%;
+}
