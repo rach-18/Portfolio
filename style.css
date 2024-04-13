@@ -98,7 +98,14 @@ header {
     }
 }
 
-.sign {
-    position: absolute;
-    top: 20%;
+/* PROJECTS */
+
+/* @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
 }
+
+.bouncing {
+    animation: bounce 0.5s ease-in-out;
+} */
