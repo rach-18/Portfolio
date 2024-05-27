@@ -135,6 +135,17 @@ header {
     animation-delay: 45s;
 }
 
+#message-pointer {
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+#experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Images/experience-bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-size: cover;
+}
+
 /* .cloud1 {
     animation: float1 60s linear infinite alternate, inAndOut 1.5s ease-in-out infinite alternate;
 }
