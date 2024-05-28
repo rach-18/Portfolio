@@ -146,6 +146,14 @@ header {
     background-size: cover;
 }
 
+#carousel {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+#arrows {
+    transition: all 300ms;
+}
+
 /* .cloud1 {
     animation: float1 60s linear infinite alternate, inAndOut 1.5s ease-in-out infinite alternate;
 }
