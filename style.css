@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+header, #contact-me {
     background-image: url(Images/hero-background.jpg);
 }
 
@@ -151,6 +151,14 @@ header {
 }
 
 #arrows {
+    transition: all 300ms;
+}
+
+#rope-clip {
+    clip-path: inset(30% 0 0 0);
+}
+
+#submit-btn {
     transition: all 300ms;
 }
 
